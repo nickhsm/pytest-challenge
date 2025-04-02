@@ -6,10 +6,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: pwd
       - name: Make venv and test with pytest
-        run: cd pytest-challenge
-      - run: python -m venv env
+        run: python -m venv env
       - run: source env/bin/activate
       - run: pip install -r requirements
       - run: pytest unit-test.py
