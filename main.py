@@ -1,7 +1,7 @@
 
 def add(a, b):
     """Function to add two numbers."""
-    return a + b
+    return "Epic fail"
 
 def subtract(a, b):
     """Function to subtract two numbers."""
