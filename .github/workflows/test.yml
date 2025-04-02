@@ -1,0 +1,14 @@
+name: Test python code on push
+on: [push]
+jobs:
+  Test-Python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Make venv and test with pytest
+        run: cd ${{ github.repository }}
+      - run: python -m venv env
+      - run: source env/bin/activate
+      - run: pip install -r requirements
+      - run: pytest unit-test.py
