@@ -9,5 +9,5 @@ jobs:
       - name: Make venv and test with pytest
         run: python -m venv env
       - run: source env/bin/activate
-      - run: pip install -r requirements
+      - run: pip install -r requirements.txt
       - run: pytest unit-test.py
