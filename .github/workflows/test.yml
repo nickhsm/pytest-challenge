@@ -10,4 +10,4 @@ jobs:
         run: python -m venv env
       - run: source env/bin/activate
       - run: pip install -r requirements.txt
-      - run: pytest unit-test.py
+      - run: pytest
