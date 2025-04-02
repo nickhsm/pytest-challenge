@@ -7,7 +7,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Make venv and test with pytest
-        run: cd ${{ github.repository }}
+        run: cd pytest-challenge
       - run: python -m venv env
       - run: source env/bin/activate
       - run: pip install -r requirements
